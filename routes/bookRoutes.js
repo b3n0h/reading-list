@@ -1,6 +1,6 @@
 const books = require('../data/readingList')
 
-module.exports (app) => {
+module.exports = (app) => {
   app.get('/books', (req, res) => res.json(books.getBooks()))
   app.post('/books', (req, res) => {
     books.addBook(req.body)

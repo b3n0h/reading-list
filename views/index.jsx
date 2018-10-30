@@ -13,6 +13,7 @@ const Home = () =>
     <body>
       <Form />
     </body>
+    <script src="/index.js" type='application/javascript' />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js" />
   </html>
 

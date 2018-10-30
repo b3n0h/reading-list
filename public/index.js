@@ -1,1 +1,3 @@
-console.log('ding')
+module.exports = (app) => {
+  require('./htmlRoutes')(app)
+}

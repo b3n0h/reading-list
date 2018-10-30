@@ -16,3 +16,5 @@ const BookList = _ =>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js" />
   </body>
   </html>
+
+  module.exports = BookList

@@ -1,6 +1,7 @@
 const React = require('react')
+const Book = require('./book')
 
-const BookList = _ => 
+const BookList = props => 
   <html lang="en">
   <head>
     <meta charSet="UTF-8"/>
@@ -10,8 +11,18 @@ const BookList = _ =>
     <title>Book List</title>
   </head>
   <body>
-    <h1>Test</h1>
-
+    <div className="ui grid centered padded">
+      <div className="eight wide column">
+        <h1>Book List</h1>
+          <li><a href="/">Add Book</a></li>
+          <li><a href="/list">Reading List</a></li>
+      </div>
+    </div>
+    <ul>
+      {props.list.map(book =>
+          <Book title={book.title} author={book.author} pages={book.pages} currentPage={book.currentPage} isRead={book.isRead} />
+        )}
+    </ul>
   <script src="/index.js" type='application/javascript' />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js" />
   </body>

@@ -23,7 +23,7 @@ const Form = _ =>
         <div className="field">
           <div className="ui checkbox">
             <input type="checkbox" name="example" id="checkBox" />
-            <label>I have read this book before</label>
+            <label htmlFor="haveRead">I have read this book before</label>
           </div>
         </div>
         <button className="ui button" type="submit" id="addBook">Add Book</button>

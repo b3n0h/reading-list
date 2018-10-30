@@ -11,7 +11,6 @@ const Home = () =>
       <title>Reading List</title>
     </head>
     <body>
-      <h1>Reading List App</h1>
       <Form />
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js" />

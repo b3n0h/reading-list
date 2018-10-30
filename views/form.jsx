@@ -1,8 +1,6 @@
 const React = require('react')
-const Fragment = React.Fragment
 
 const Form = _ =>
-<Fragment>
   <form className="ui form">
     <div className="field">
       <label>First Name</label>
@@ -20,6 +18,5 @@ const Form = _ =>
     </div>
     <button className="ui button" type="submit">Submit</button>
   </form>
-</Fragment>
 
 module.exports = Form

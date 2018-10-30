@@ -5,7 +5,6 @@ const Form = _ =>
     <div className="eight wide column">
       <form className="ui form">
         <div className="field">
-          <h1>Reading List App</h1>
           <label>Book Title</label>
           <input type="text" name="first-name" placeholder="Jurassic Park" id="title" />
         </div>
@@ -29,11 +28,6 @@ const Form = _ =>
         </div>
         <button className="ui button" type="submit" id="addBook">Add Book</button>
       </form>
-      <br />
-      <hr />
-      <br />  
-      <li><a href="/">Add Book</a></li>
-      <li><a href="">Reading List</a></li>
     </div>
   </div>
 

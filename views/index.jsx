@@ -11,6 +11,13 @@ const Home = () =>
       <title>Reading List</title>
     </head>
     <body>
+      <div className="ui grid centered padded">
+        <div className="eight wide column">
+          <h1>Reading List App</h1>
+          <li><a href="/">Add Book</a></li>
+          <li><a href="/list">Reading List</a></li>
+        </div>
+      </div>
       <Form />
     </body>
     <script src="/index.js" type='application/javascript' />

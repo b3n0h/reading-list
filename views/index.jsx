@@ -1,4 +1,5 @@
 const React = require('react')
+const Form = require('./form')
 
 const Home = () => 
   <html lang="en">
@@ -11,6 +12,7 @@ const Home = () =>
     </head>
     <body>
       <h1>Reading List App</h1>
+      <Form />
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js" />
   </html>

@@ -20,8 +20,9 @@ const Home = () =>
       </div>
       <Form />
     </body>
-    <script src="/index.js" type='application/javascript' />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossOrigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js" />
+    <script src="./js/index.js" type='application/javascript' />
   </html>
 
 module.exports = Home

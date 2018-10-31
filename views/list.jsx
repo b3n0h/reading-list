@@ -14,17 +14,24 @@ const BookList = props =>
     <div className="ui grid centered padded">
       <div className="eight wide column">
         <h1>Book List</h1>
-          <li><a href="/">Add Book</a></li>
-          <li><a href="/list">Reading List</a></li>
+          <ul>
+            <li><a href="/">Add Book</a></li>
+            <li><a href="/list">Reading List</a></li>
+          </ul>
       </div>
     </div>
-    <ul>
-      {props.list.map(book =>
-          <Book title={book.title} author={book.author} pages={book.pages} currentPage={book.currentPage} isRead={book.isRead} />
-        )}
-    </ul>
-  <script src="/index.js" type='application/javascript' />
+      <div className="ui grid centered padded">
+        <div className="eight wide column">
+          <ul>
+            {props.list.map(book =>
+                <Book title={book.title} author={book.author} pages={book.pages} currentPage={book.currentPage} haveRead={book.haveRead} />
+              )}
+          </ul>
+        </div>
+      </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossOrigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js" />
+  <script src="./js/list.js" type='application/javascript' />
   </body>
   </html>
 

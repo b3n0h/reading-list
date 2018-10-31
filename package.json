@@ -21,6 +21,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-react-views": "^0.10.5",
+    "nodemon": "^1.18.5",
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
   }

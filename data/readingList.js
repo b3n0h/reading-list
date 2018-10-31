@@ -2,23 +2,24 @@ let books = []
 let selectedBook = {}
 
 module.exports = {
-  getBook () {
+  getBooks() {
     return books
   },
-  setBook (id) {
+  setBook(id) {
     const index = books.findIndex(bookThing => bookThing.id === id)
     selectedBook = books[index]
   },
-  getBook () {
+  getBook() {
     return selectedBook
   },
-  addBook (book) {
+  addBook(book) {
     books.push(book)
   },
-  updateBook (id, book) {
+  updateBook(id, book) {
     const index = books.findIndex(bookThing => bookThing.id === id)
+    books[index] = book
   },
-  deleteBook (id) {
+  deleteBook(id) {
     const index = books.findIndex(bookThing => bookThing.id === id)
     books.splice(index, 1)
   }
